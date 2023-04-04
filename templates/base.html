@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{% block title %}Biblioteca{% endblock %}</title>
+</head>
+<body>
+    <nav>
+        <a href="{% url 'editoriales' %}">Editoriales</a>
+        <a href="{% url 'generos' %}">Géneros</a>
+        <a href="{% url 'idiomas' %}">Idiomas</a>
+        <a href="{% url 'libros' %}">Libros</a>
+    </nav>
+    {% block content %}{% endblock %}
+</body>
+</html>
